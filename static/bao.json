@@ -1,0 +1,15 @@
+{
+  "rimdlist":[
+    {"name":"贵阳","leiji":"10","xianxia":"7"},
+    {"name":"毕节","leiji":"15","xianxia":"10"},
+    {"name":"遵义","leiji":"30","xianxia":"17"},
+    {"name":"黔东南","leiji":"55","xianxia":"20"},
+    {"name":"黔西南","leiji":"60","xianxia":"31"},
+    {"name":"黔南","leiji":"62","xianxia":"18"},
+    {"name":"六盘水","leiji":"80","xianxia":"28"},
+    {"name":"铜仁","leiji":"60","xianxia":"16"},
+    {"name":"安顺","leiji":"10","xianxia":"27"},
+    {"name":"贵安","leiji":"62","xianxia":"45"},
+    {"name":"省政企","leiji":"80","xianxia":"19"}
+  ]
+}

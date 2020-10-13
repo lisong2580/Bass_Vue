@@ -1,0 +1,15 @@
+{
+  "rightbtmlist":[
+    {"name":"贵阳","value":"10"},
+    {"name":"毕节","value":"15"},
+    {"name":"遵义","value":"30"},
+    {"name":"黔东南","value":"55"},
+    {"name":"黔西南","value":"60"},
+    {"name":"黔南","value":"62"},
+    {"name":"六盘水","value":"80"},
+    {"name":"铜仁","value":"60"},
+    {"name":"安顺","value":"10"},
+    {"name":"贵安","value":"62"},
+    {"name":"省政企","value":"80"}
+  ]
+}

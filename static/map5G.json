@@ -1,0 +1,13 @@
+{
+  "areaPm": [
+    {"name":"贵阳市","monadd":"1111","value":"140.24","nameli":"贵阳"},
+    {"name":"毕节市","monadd":"22222","value":"140.24","nameli":"毕节"},
+    {"name":"遵义市","monadd":"333","value":"140.24","nameli":"遵义"},
+    {"name":"黔东南苗族侗族自治州","monadd":"444","value":"80.24","nameli":"黔东南"},
+    {"name":"六盘水市","monadd":"5555","value":"80.24","nameli":"六盘水"},
+    {"name":"铜仁市","monadd":"666","value":"80.24","nameli":"铜仁"},
+    {"name":"黔西南布依族苗族自治州","monadd":"777","value":"80.24","nameli":"黔西南"},
+    {"name":"安顺市","monadd":"8888","value":"80.24","nameli":"安顺"},
+    {"name":"黔南布依族苗族自治州","monadd":"999","value":"80.24","nameli":"黔南"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "liuliangbao":{"rifazhan":"109","leiji":"39020","xianxiari":"89","xianxiayue":"4957","renwushu":"10904","wancheng":"158.35"},
+  "jingrong":{"rifazhan":"278","yueleiji":"7896","renwushu":"192773","wancheng":"68"},
+  "leftlist":[
+    {"dishi":"贵阳","leiji":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"遵义","leiji":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"毕节","leiji":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"六盘水","leiji":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"黔西南","leiji":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"黔南","leiji":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"黔东南","leiji":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"铜仁","leiji":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"安阳","leiji":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"省政企","leiji":"4837","renwu":"294","wcd":"84.23%"}
+  ],
+  "ritlist":[
+    {"dishi":"贵阳","zhi":"4837","jinr":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"遵义","zhi":"4837","jinr":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"毕节","zhi":"4837","jinr":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"六盘水","zhi":"4837","jinr":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"黔西南","zhi":"4837","jinr":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"黔南","zhi":"4837","jinr":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"黔东南","zhi":"4837","jinr":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"铜仁","zhi":"4837","jinr":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"安阳","zhi":"4837","jinr":"4837","renwu":"294","wcd":"84.23%"},
+    {"dishi":"省政企","zhi":"4837","jinr":"4837","renwu":"294","wcd":"84.23%"}
+  ]
+}
