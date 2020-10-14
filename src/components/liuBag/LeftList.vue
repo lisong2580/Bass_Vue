@@ -10,7 +10,8 @@
     </thead>
     <tbody>
       <tr v-for="(item, index) in leftlist" :key = "index">
-        <td>{{item.dishi}}</td><td>{{item.leiji}}</td><td>{{item.renwu}}</td><td>{{item.wcd}}</td>
+        <td>{{item.AREA_NAME}}</td><td>{{item.GPRS_PACK_MDEV}}</td><td>{{item.GPRS_OFF_MISSION}}</td><td>{{parseFloat(item.GPSR_TASKCOMP*100).toFixed(2)+"%"}}</td>
+        
       </tr>
     </tbody>
   </table>
@@ -48,12 +49,25 @@ export default {
   methods:{
     leftbagAjax(){
       let _this = this;
+      // 获取当前时间
+      var d=new Date();
+			var day=d.getFullYear()+("0"+(d.getMonth()+1)).slice(-2)+("0"+(d.getDate())).slice(-2);
       this.$axios({
         method: "get",
-        url: "../../../static/liuliang.json",
+        url: "api/bass/flowFinancial/dataEveryCity",
+        params: {
+          acctDay: "20200927",
+        },
+        // url: "../../../static/liuliang.json",
       })
       .then(res => {
-        _this.leftlist = res.data.leftlist;
+        var data=res.data.data;
+        var data_list=new Array();
+        for(var i=1;i<data.length;i++){
+          data_list.push(data[i])
+        }
+        data_list.push(data[0]);
+        _this.leftlist = data_list;
       })
       .catch(res => {  
         console.log("请求失败：", res);

@@ -3,27 +3,27 @@
     <li>
       <img src="../../assets/liuliang-rifazhan.png" alt="">
       <p>流量包日发展</p>
-      <p><span>{{liuliangbao.rifazhan}}</span><span>户</span></p>
+      <p><span>{{liuliangbao.GPRS_PACK_DEV}}</span><span>户</span></p>
     </li>
     <li>
       <img src="../../assets/liuliang-yueleiji.png" alt="">
       <p>流量包月累计</p>
-      <p><span>{{liuliangbao.leiji}}</span><span>户</span></p>
+      <p><span>{{liuliangbao.GPRS_PACK_MDEV}}</span><span>户</span></p>
     </li>
     <li>
       <img src="../../assets/liuliang-xianxiari.png" alt="">
       <p>流量包线下日发展</p>
-      <p><span>{{liuliangbao.xianxiari}}</span><span>户</span></p>
+      <p><span>{{liuliangbao.GPRS_PACK_ONLINEDEV}}</span><span>户</span></p>
     </li>
     <li>
       <img src="../../assets/liuliang-xianxiayue.png" alt="">
       <p>流量包线下月发展</p>
-      <p><span>{{liuliangbao.xianxiayue}}</span><span>户</span></p>
+      <p><span>{{liuliangbao.GPRS_PACK_MOFFLINEDEV}}</span><span>户</span></p>
     </li>
     <li>
       <img src="../../assets/liuliang-renwu.png" alt="">
       <p>流量包任务数</p>
-      <p><span>{{liuliangbao.renwushu}}</span><span>户</span></p>
+      <p><span>{{liuliangbao.GPRS_OFF_MISSION}}</span><span>户</span></p>
     </li>
     <li>
       <img src="../../assets/liuliang-wancheng.png" alt="">
@@ -48,12 +48,20 @@ export default {
   methods:{
     topbagAjax(){
       let _this = this;
+      // 获取当前时间
+      var d=new Date();
+			var day=d.getFullYear()+("0"+(d.getMonth()+1)).slice(-2)+("0"+(d.getDate())).slice(-2);
       this.$axios({
         method: "get",
-        url: "../../../static/liuliang.json",
+        url: "api/bass/flowFinancial/dataSum",
+        params: {
+          acctDay: "20200927",
+        },
+        // url: "../../../static/liuliang.json",
       })
       .then(res => {
-        _this.liuliangbao = res.data.liuliangbao;
+        _this.liuliangbao = res.data.data;
+        _this.liuliangbao.wancheng=parseFloat((parseInt(_this.liuliangbao.GPRS_PACK_MOFFLINEDEV)/parseInt(_this.liuliangbao.GPRS_OFF_MISSION))*100).toFixed(2)
       })
       .catch(res => {  
         console.log("请求失败：", res);
